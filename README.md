@@ -104,7 +104,7 @@ em{
 
 <script>
 $( document ).ready(function() {
-   $('span[data-toggle="tooltip"]').tooltip({animated: 'fade', placement: 'bottom'});
+   $('.mc-word[data-toggle="tooltip"]').tooltip({animated: 'fade', placement: 'top'});
 });</script>
 
 في الجملة الاولى مثلا نشهد العشوائية بشكل كامل حيث كل كلمة تحمل سلسلة متنوعة من الكلمات التي تلحقها فلا يمكنك بمعرفة "ينبغي" أو "يصلي" أو "يصوم" أن تتوقع بدقة عالية الكلمة القادمة.
