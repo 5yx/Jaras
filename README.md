@@ -8,7 +8,8 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 <style>
-	a,p,h3 {direction: rtl;}
+	a,p,h3,li{direction: rtl; text-align:right}
+	
 .mc-word{
   padding-left:0.2em;
 }
