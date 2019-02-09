@@ -105,6 +105,7 @@ var mc_parent = document.querySelector('#mc_container'),
 			mc_span = document.createElement('span')
 			mc_span.className = "mc-word"
 			mc_span.dataset.toggle = "tooltip"
+			mc_span.dataset.html="true"
 			mc_span.title = "<em>... " + mc_subitem[2] + " ...</em> - <a href='http://www.alminbar.net/alkhutab/khutbaa.asp?mediaURL=" + toString(mc_subitem[0]) + "'>" + mc_subitem[1] + "</a>"
 			mc_span.innerText = mc_subitem[3]
 			mc_li.appendChild(mc_span)
