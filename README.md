@@ -136,7 +136,7 @@ updatemenus: [{
 		method: 'restyle',
 		args: ['visible', [false, true]],
 		label: 'مسجد'
-	}و{
+	},{
 		method: 'restyle',
 		args: ['visible', [true, false]],
 		label: 'كلستر'
