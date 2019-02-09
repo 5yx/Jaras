@@ -110,7 +110,8 @@ trace2 = {
     colorscale: [['0', '#9e0142'], ['1', '#5e4fa2']], 
   }, 
   mode: 'markers', 
-  type: 'scatter', 
+  type: 'scatter',
+  visible: false,
 };
 data = [trace1, trace2];
 layout = {
