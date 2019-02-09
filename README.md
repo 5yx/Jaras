@@ -16,7 +16,7 @@
 
 .mc-word:hover, .mc-word:hover + .mc-word { 
   color: red;
-  border: 2px solid red;
+  border: 1px solid red;
   border-radius: 0px;
  }
 
@@ -32,7 +32,6 @@
 }
 
 .mc-word:hover + .mc-word, .mc-word:hover:last-of-type {
-   border: 2px solid red;
    border-top-left-radius: 4px;
    border-bottom-left-radius: 4px;
    border-right: none;
