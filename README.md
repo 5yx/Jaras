@@ -315,4 +315,3 @@ var mc_parent = document.querySelector('#mc_container'),
 $(document).ready(function(){$('.mc-word[data-toggle="tooltip"]').tooltip({animated: 'fade', placement: 'top'});});
 </script>
 	 
-الجملة
