@@ -69,8 +69,8 @@ em{
 
 <div id="radar-div"></div>
 <script>
-	trace1 = {r: ['32.50%', '44.52%', '15.41%', '16%','32.50%'], fill: 'toself', fillcolor: 'rgba(64, 155, 37, 0.5)', hoverinfo: 'r', hoveron: 'points', line: {color: 'rgb(29, 93, 10)'}, marker: {color: '#0074D9'}, mode: 'markers+lines', name: 'عبدالعزيز بن عبد الله آل الشيخ', theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], type: 'scatterpolar'};
-	trace2 = {r: ['20.00%', '38.25%', '13.42%', '36%', '20.00%'], fill: 'toself', fillcolor: 'rgba(161, 60, 46, 0.5)', hoverinfo: 'r', hoveron: 'points', line: {color: 'rgb(161, 33, 10)'}, marker: {color: '#FF851B'}, mode: 'markers+lines', name: 'عبدالرحمن بن عبد العزيز السديس', theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], type: 'scatterpolar'};
+	trace1 = {r: ['32.50%', '44.52%', '15.41%', '16%','32.50%'], fill: 'toself', fillcolor: '#7F0074D9', hoverinfo: 'r', hoveron: 'points', line: {color: '#001f3f'}, marker: {color: '#0074D9'}, mode: 'markers+lines', name: 'عبدالعزيز بن عبد الله آل الشيخ', theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], type: 'scatterpolar'};
+	trace2 = {r: ['20.00%', '38.25%', '13.42%', '36%', '20.00%'], fill: 'toself', fillcolor: '#7FFF851B', hoverinfo: 'r', hoveron: 'points', line: {color: '#FF4136'}, marker: {color: '#FF851B'}, mode: 'markers+lines', name: 'عبدالرحمن بن عبد العزيز السديس', theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], type: 'scatterpolar'};
 	data = [trace1, trace2];
 	layout = {autosize: true, dragmode: false, legend: {borderwidth: 0}, polar: {angularaxis: {rotation: 45, showgrid: true, showline: true, showticklabels: true, tickformat: '', ticks: 'outside', type: 'category'}, radialaxis: {angle: 0, autorange: false, nticks: 0, range: [0, 50], showgrid: true, showline: false, showticklabels: false, type: 'linear'}, sector: [0]}, showlegend: true, xaxis: {autorange: true}, yaxis: {autorange: true}};
 	config = {displayModeBar: false, responsive: true};
