@@ -120,12 +120,73 @@ Plotly.plot('words-div', {data: data, layout: layout, config:config});
 
 <div id="radar-div"></div>
 <script>
-	trace1 = {r: ['32.50%', '44.52%', '15.41%', '16%','32.50%'], fill: 'toself', fillcolor: 'rgba(0, 116, 217, 0.5)', hoverinfo: 'r', hoveron: 'points', line: {color: '#001f3f'}, marker: {color: '#0074D9'}, mode: 'markers+lines', name: 'عبدالعزيز بن عبد الله آل الشيخ', theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], type: 'scatterpolar'};
-	trace2 = {r: ['20.00%', '38.25%', '13.42%', '36%', '20.00%'], fill: 'toself', fillcolor: 'rgba(255, 133, 27, 0.5)', hoverinfo: 'r', hoveron: 'points', line: {color: '#994700'}, marker: {color: '#FF851B'}, mode: 'markers+lines', name: 'عبدالرحمن بن عبد العزيز السديس', theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], type: 'scatterpolar'};
-	data = [trace1, trace2];
-	layout = {autosize: true, dragmode: false, legend: {borderwidth: 0}, polar: {angularaxis: {rotation: 45, showgrid: true, showline: true, showticklabels: true, tickformat: '', ticks: 'outside', type: 'category'}, radialaxis: {angle: 0, autorange: false, nticks: 0, range: [0, 50], showgrid: true, showline: false, showticklabels: false, type: 'linear'}, sector: [0]}, showlegend: true, xaxis: {autorange: true}, yaxis: {autorange: true}};
-	config = {displayModeBar: false, responsive: true};
-	Plotly.react('radar-div', {data: data, layout: layout, config: config});
+
+trace1 = {
+  r: ['32.5', '44.52', '15.41', '16','32.5'], 
+  fill: 'toself', fillcolor: 'rgba(0, 116, 217, 0.5)', 
+  hoverinfo: 'r', 
+  hoveron: 'points', 
+  line: {color: '#001f3f'}, 
+  marker: {color: '#0074D9'}, 
+  mode: 'markers+lines', 
+  name: 'عبدالعزيز بن عبد الله آل الشيخ', 
+  theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], 
+  type: 'scatterpolar'
+};
+
+trace2 = {
+  r: ['20', '38.25', '13.42', '36', '20'], 
+  fill: 'toself', 
+  fillcolor: 'rgba(255, 133, 27, 0.5)', 
+  hoverinfo: 'r', 
+  hoveron: 'points', 
+  line: {color: '#994700'}, 
+  marker: {color: '#FF851B'}, 
+  mode: 'markers+lines', 
+  name: 'عبدالرحمن بن عبد العزيز السديس', 
+  theta: ['عدد الخطب', 'طول الخطبة', 'نسبة الإستدلال', 'عدد الكلمات المتفردة', 'عدد الخطب'], 
+  type: 'scatterpolar'
+};
+
+data = [trace1, trace2];
+
+layout = {
+  dragmode: false,
+  clickmode: "none",
+  autosize: true, 
+  dragmode: false, 
+  legend: {borderwidth: 0}, 
+  polar: {
+    angularaxis: {
+      rotation: 45, 
+      showgrid: true, 
+      showline: true, 
+      showticklabels: true, 
+      tickformat: '', 
+      ticks: 'outside', 
+      type: 'category'
+    }, 
+    radialaxis: {
+      angle: 0, 
+      autorange: false, 
+      nticks: 0, 
+      range: [0, 50], 
+      showgrid: true, 
+      showline: false, 
+      showticklabels: false, 
+      ticks: "",
+      type: 'linear'
+    }, 
+    sector: [0]
+  }, 
+  showlegend: true, 
+  xaxis: {autorange: true}, 
+  yaxis: {autorange: true}
+};
+
+config = {displayModeBar: false, responsive: true};
+Plotly.react('radar-div', {data: data, layout: layout, config: config});
+
 </script>
 *ملاحظة: المقارنة بين خطب فقيهين مثل محمد ابن عثيمين وعبدالعزيز آل الشيخ يظهر نتيجة مثيرة للاهتمام
 
