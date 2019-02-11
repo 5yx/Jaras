@@ -424,6 +424,6 @@ var mc_parent = document.querySelector('#mc_container'),
 	})
 	mc_parent.appendChild(mc_ul)
 
-$(document).ready(function(){$('.mc-word[data-toggle="tooltip"]').tooltip({animated: 'fade', placement: 'top'});});
+$(document).ready(function(){$('.mc-word[data-toggle="tooltip"]').tooltip({animated: 'fade', placement: 'top', delay: {"show": 0, "hide": 100}});});
 </script>
 	 
