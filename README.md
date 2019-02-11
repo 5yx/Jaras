@@ -429,7 +429,7 @@ var mc_parent = document.querySelector('#mc_container'),
 $('.mc-word[data-toggle="tooltip"]').popover({
 html: true,
 trigger: 'manual',
-container: $(this).attr('id'),
+container: false,
 placement: 'top',
 content: function () {
     $return = '<div class="hover-hovercard"></div>';
