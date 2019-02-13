@@ -34,9 +34,12 @@ a,p,h3,li,em{direction: rtl; text-align:right}
  
  
 #scrolly-side {
-    position:absolute;
-    left:0;
-    right:0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 #scrolly-side .scrolly {
