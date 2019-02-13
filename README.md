@@ -14,7 +14,7 @@
   padding-left:0.2em;
 }
 
-.mc-word:hover, .mc-word:hover + .mc-word { 
+.mc-word:hover, .mc-word + .mc-word:hover { 
   color: #001f3f;
   border: 1px solid #0074D9;
   border-radius: 0px;
