@@ -15,7 +15,11 @@
 <style>
 
 a,p,h3,li,em{direction: rtl; text-align:right}
-	
+
+#mc_container, .mc-word {
+  word-break: break-word
+}
+
 .mc-word{
   padding-left:0.2em;
 }
