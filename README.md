@@ -455,11 +455,11 @@ var mc_parent = document.querySelector('#mc_container'),
 			mc_span.className = "mc-word"
 			mc_span.dataset.toggle = "popover"
 			mc_span.dataset.html = "true"
-      mc_span.dataset.trigger = "hover"
-      mc_span.dataset.placement = "top"
-			mc_span.dataset.content = mc_subitem[2]
+			mc_span.dataset.trigger = "hover"
+			mc_span.dataset.placement = "top"
+			mc_span.dataset.content = mc_subitem[1]
 			mc_span.dataset.title = mc_subitem[3] + " - " + mc_subitem[0]
-			mc_span.content = mc_subitem[1]
+			mc_span.content = mc_subitem[2]
 			mc_li.appendChild(mc_span)
 		})
 		mc_ul.appendChild(mc_li)
@@ -467,7 +467,7 @@ var mc_parent = document.querySelector('#mc_container'),
 	mc_parent.appendChild(mc_ul)
 
 $(document).ready(function(){
-  $('.mc-word[data-toggle="popover"]').tooltip()
+  $('.mc-word[data-toggle="popover"]').popover()
 });
 
 /*
