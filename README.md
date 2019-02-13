@@ -459,7 +459,7 @@ var mc_parent = document.querySelector('#mc_container'),
 			mc_span.dataset.placement = "top"
 			mc_span.dataset.content = mc_subitem[1]
 			mc_span.dataset.title = mc_subitem[3] + " - " + mc_subitem[0]
-			mc_span.textContent = mc_subitem[2] + " "
+			mc_span.textContent = mc_subitem[2]
 			mc_li.appendChild(mc_span)
 		})
 		mc_ul.appendChild(mc_li)
@@ -470,29 +470,5 @@ $(document).ready(function(){
   $('.mc-word[data-toggle="popover"]').popover()
 });
 
-/*
-$('.mc-word[data-toggle="tooltip"]').popover({
-html: true,
-trigger: 'manual',
-container: false,
-placement: 'top',
-content: function () {
-    $return = '<div class="hover-hovercard"></div>';
-}
-}).on("mouseenter", function () {
-var _this = this;
-$(this).popover("show");
-$(this).siblings(".popover").on("mouseleave", function () {
-    $(_this).popover('hide');
-});
-}).on("mouseleave", function () {
-var _this = this;
-setTimeout(function () {
-    if (!$(".popover:hover").length) {
-	$(_this).popover("hide")
-    }
-}, 100);
-});
-    */
 </script>
 	  
