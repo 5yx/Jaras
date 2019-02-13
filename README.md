@@ -478,7 +478,7 @@ enterView({
 
 <div id="aya_ref"></div>
 <p id="aya_title" class="label label-default"></p>
-<div id="aya_text"></div>
+<p id="aya_text"></p>
 
 <script>
 trace1 = {
