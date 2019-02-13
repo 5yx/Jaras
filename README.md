@@ -1,6 +1,11 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://unpkg.com/d3@5.4.0/dist/d3.min.js"></script>
+<script src="https://unpkg.com/enter-view@1.0.0/enter-view.min.js"></script>
+<script src="https://unpkg.com/stickyfilljs@2.0.5/dist/stickyfill.js"></script>
+
+
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -25,6 +30,72 @@ a,p,h3,li,em{direction: rtl; text-align:right}
   border-radius: 4px;
   font-weight:bold;
  }
+ 
+
+
+
+.filler {
+  height: 20rem;
+  text-align: center;
+}
+
+#scrolly-side .scrolly {
+  display: flex;
+  max-width: 85rem;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+#scrolly-side .scrolly > * {
+  flex: 1;
+}
+
+#scrolly-side .scrolly article {
+  padding-right: 1rem;
+  max-width: 25rem;
+}
+
+#scrolly-side .scrolly article .step {
+  min-height: 90vh;
+  margin-bottom: 1rem;
+  transition: background-color 250ms ease-in-out;
+}
+
+#scrolly-side .scrolly article .step:last-of-type {
+  margin-bottom: 0;
+}
+
+#scrolly-side .scrolly article .step.is-active p {
+  background-color: #ccc;
+}
+
+#scrolly-side .scrolly article .step p {
+  margin: 0;
+  padding: 1rem;
+  text-align: right;
+  font-weight: 400;
+  direction: rtl;
+}
+
+#scrolly-side .scrolly figure.sticky {
+  position: sticky;
+  width: 100%;
+  height: 80vh;
+  background: #969696;
+  margin: 0;
+  top: 10vh;
+  left: 0;
+}
+#scrolly-side .scrolly figure.sticky .bar-outer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+ 
+ 
+ 
 </style>
 
 ### الكلمات المتفردة
@@ -230,17 +301,55 @@ Plotly.react('radar-div', {data: data, layout: layout, config: config})
 *ملاحظة: المقارنة بين خطب فقيهين مثل محمد ابن عثيمين وعبدالعزيز آل الشيخ يظهر نتيجة مثيرة للاهتمام
 
 ### عبدالرحمن السديس والتجميع بالمتوسطات
-عند استعراضك لخطب الشيخ عبدالرحمن السديس واضعا طول الخطبة في المحور السيني ونسبة الاستدلال في الخطبة في المحور الصادي ستجد توزيع الخطب لا يشير إلى ظاهرة أو سلوك أو أساس يوضح آلية عمل الشيخ في كتابة خطبه.
- 
-مع مزيد من التمحيص اتضح أن هذه الخطب مقسمة على جامعين وهم جامع الفرقان والمسجد الحرام وعند تلوين هذه الخطب يمكنك بوضوح رؤية الاختلاف في الكتابة بين الجامعين.
- 
-في حال نقص البيانات من معلومة مؤثرة (كالجامع في حالتنا) بإمكانها تفسير هذا الاختلاف، هل بإمكان خوارزمية التجميع بالمتوسطات (K-Means Clustering) تقسيم هذه البيانات؟ التجميع بالمتوسطات هو احدى وسائل تصنيف البيانات التي تقوم بتجميع المتجهات عن طريق استحداث نقاط أولية وحساب المسافة الاقليدية بينها وبين البيانات لتشكيل مجموعة ومواصلة تحسين هذه العملية حتى تصل للتجميع النهائي
- 
-<div id="sudais"></div>
+
+<section class='filler'>
+  <p>البداية</p>
+</section>
+
+<section id='scrolly-side'>
+  <div class='scrolly'>
+    
+    <!--  step text   -->
+	  <article>
+      <div class='step' data-stage='first' data-index='0'>
+          <p>عند استعراضك لخطب الشيخ عبدالرحمن السديس واضعا طول الخطبة في المحور السيني ونسبة الاستدلال في الخطبة في المحور الصادي ستجد توزيع متناثر للخطب لا يشير إلى سلوك أو أساس يوضح آلية كتابة الشيخ لخطبه.</p>
+      </div>
+      <div class='step' data-stage='second' data-index='1'>
+         <p>مع مزيد من التمحيص اتضح أن هذه الخطب مقسمة على جامعين وهم جامع الفرقان والمسجد الحرام وعند تلوين هذه الخطب يمكنك بوضوح رؤية الاختلاف في الكتابة بين الجامعين مما يفسر هذا الإختلاف. ماذا لو لم نملك معلومة الجوامع؟ كيف بإمكاننا تمييز هذا الإختلاف دون معاينة البيانات كل مرة؟</p>
+      </div>
+      <div class='step' data-stage='third' data-index='2'>
+        <p>التجميع بالمتوسطات (K-Means Clustering) هو احدى وسائل تصنيف البيانات بحساب التقارب والتباعد ووضع النقاط المتقاربة في مجموعة. تقوم الخوارزمية بتجميع المتجهات عن طريق استحداث نقاط أولية وحساب المسافة الاقليدية بينها وبين البيانات لتشكيل مجموعة ومواصلة تحسين هذه العملية حتى تصل للتجميع النهائي</p>
+      </div>
+	  </article>
+    
+     <!--  sticky graphic   -->
+	  <figure class='sticky'>
+		  <div id="sudais" class='bar-outer'>
+  		</div>
+  	</figure>
+    
+  </div>
+  
+</section>
+
+<section class='filler'>
+  <p>
+    التالي
+  </p>
+</section>
+
+
 
 <script>
 
-sudais_colors = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,0]]
+sudais_colors = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,0]]
+
+var frames = [
+  {name: 'first', data: [{marker: {color:sudais_colors[0]}}]},
+  {name: 'second', data: [{marker: {color:sudais_colors[1]}}]},
+  {name: 'third', data: [{marker: {color:sudais_colors[2]}}]},
+];
+
 
 trace1 = {
   x: [2159,2661,3132,2459,2161,2962,2532,2012,4035,2095,5681,4347,2444,4638,2419,2243,2340,2224,2719,2040,2262,2478,2785,1912,2090,2246,2012,2070,1971,2434,1946,2157,2210,2306,1855,1875,2481,2348,2366,5054,1786,2493,2079,2769,1990,1965,1886,2250,2413,2523,2420,3761,2508,2814,2416,2408,1749,2217,1687,1988,2045,2158,1825,2499,2171,1860,2084,2077,1859,1636,1885,2146,1621,1826,1866,2488,2558,2229,1730,2037,1512,1707,2002,1782,2416,2158,1666,1648,1732,1572,1242,1756,1497,3342,1507,1590,1314,1412,1356,1434,1465,1606,1537,1490,1613,1552,1413,1485,1625,1511,1853,1438,863,1333,1791,1013,983,1264,895,816,1145,1489,2374,1703,1199,1478,1694,1580,1653,1729,1422,1006,2152,1013,1695,1719,1218,1384,1136,1564,1875,1349,1064,1345,1113,1303,910,1175,1078,957,1150,1480,1037,1414,1226,1363,905,1048,785], 
@@ -250,8 +359,8 @@ trace1 = {
   marker: {
     cauto: true, 
     color: sudais_colors[0], 
-    colorscale: [['0', '#e41a1c'], ['1', '#999999']], 
-    size: 6, 
+    colorscale: [['0', '#999'], ['1', '#e41a1c']], 
+    size: 10, 
     symbol: 'circle'
   }, 
   mode: 'markers', 
@@ -289,7 +398,8 @@ layout = {
     ticksuffix: '%', 
     title: {text: 'متوسط نسبة الإقتباس'}, 
     type: 'linear'
-  }
+  },
+  hovermode: "closest"
 };
 
 config = {displayModeBar: false, responsive: true};
@@ -298,6 +408,35 @@ Plotly.plot('sudais', {
   data: data,
   layout: layout,
   config: config
+}).then(function() {
+  Plotly.addFrames('sudais', frames);
+});
+
+const container = d3.select('#scrolly-side');
+const stepSel = container.selectAll('.step');
+
+function updateChart(index) {
+	const sel = container.select(`[data-index='${index}']`);
+	const message = sel.attr('data-index');
+	stepSel.classed('is-active', (d, i) => i === index);
+	//container.select('.bar-outer').text(message)
+  Plotly.animate('sudais', [sel.attr('data-stage')]);
+}
+
+
+Stickyfill.add(d3.select('.sticky').node());
+enterView({
+	selector: stepSel.nodes(),
+	offset: 0.5,
+	enter: el => {
+		const index = +d3.select(el).attr('data-index');
+		updateChart(index);
+	},
+	exit: el => {
+		let index = +d3.select(el).attr('data-index');
+		index = Math.max(0, index - 1);
+		updateChart(index);
+	}
 });
 
 </script>
