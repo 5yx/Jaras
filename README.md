@@ -34,7 +34,7 @@ a,p,h3,li,em{direction: rtl; text-align:right}
  
  
 #scrolly-side {
-  width: 100vw;
+  width: 98vw;
   position: relative;
   left: 50%;
   right: 50%;
