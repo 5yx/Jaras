@@ -31,13 +31,9 @@ a,p,h3,li,em{direction: rtl; text-align:right}
   font-weight:bold;
  }
  
-
-
-
-.filler {
-  height: 20rem;
-  text-align: center;
-}
+ 
+ 
+ 
 
 #scrolly-side .scrolly {
   display: flex;
@@ -302,10 +298,6 @@ Plotly.react('radar-div', {data: data, layout: layout, config: config})
 
 ### عبدالرحمن السديس والتجميع بالمتوسطات
 
-<section class='filler'>
-  <p>البداية</p>
-</section>
-
 <section id='scrolly-side'>
   <div class='scrolly'>
     
@@ -323,21 +315,13 @@ Plotly.react('radar-div', {data: data, layout: layout, config: config})
 	  </article>
     
      <!--  sticky graphic   -->
-	  <figure class='sticky'>
-		  <div id="sudais" class='bar-outer'>
-  		</div>
-  	</figure>
+<figure class='sticky'>
+  <div id="sudais" class='bar-outer'></div>
+</figure>
     
   </div>
   
 </section>
-
-<section class='filler'>
-  <p>
-    التالي
-  </p>
-</section>
-
 
 
 <script>
