@@ -206,7 +206,7 @@ khateeb_data.forEach(function(khateeb) {
 
 buttons_b.unshift({
   args: [[
-    {data: [{r:[10.32,30.48,14.24,15], name: "متوسط الكل"}], traces: [1]},
+    {data: [{r:[10.32,30.48,14.24,15,10.32], name: "متوسط الكل"}], traces: [1]},
     {transition: {duration: 500, easing: 'cubic-in-out'}, frame: {duration: 500}}
   ]], 
   label: "متوسط الكل", 
