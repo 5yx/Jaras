@@ -458,7 +458,7 @@ var mc_parent = document.querySelector('#mc_container'),
       mc_span.dataset.trigger = "hover"
       mc_span.dataset.placement = "top"
 			mc_span.dataset.content = mc_subitem[2]
-			mc_span.dataset.title = mc_subitem[3] " - " + mc_subitem[0]
+			mc_span.dataset.title = mc_subitem[3] + " - " + mc_subitem[0]
 			mc_span.content = mc_subitem[1]
 			mc_li.appendChild(mc_span)
 		})
