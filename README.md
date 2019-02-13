@@ -33,7 +33,11 @@ a,p,h3,li,em{direction: rtl; text-align:right}
  
  
  
- 
+#scrolly-side {
+    position:absolute;
+    left:0;
+    right:0;
+}
 
 #scrolly-side .scrolly {
   display: flex;
@@ -298,7 +302,6 @@ Plotly.react('radar-div', {data: data, layout: layout, config: config})
 
 ### عبدالرحمن السديس والتجميع بالمتوسطات
 
-</section>
 
 <section id='scrolly-side'>
   <div class='scrolly'>
@@ -428,7 +431,6 @@ enterView({
 </script>
 
 
-<section class="main-content">
 ### الآيات المستدل بها
 كما ذكر في الاعلى تم تقسيم الخطبة إلى قسمين الأول يحتوي الاقتباسات المستدل بها والآخر يحتوي على نص الخطيب نفسه. عند النظر إلى 
 القسم الأول وجدنا ثلاث سور لم يقتبس منهم في الخطب المحللة وهم ("الكوثر" ، "الانشقاق" ، "فصلت") مما
