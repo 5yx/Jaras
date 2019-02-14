@@ -40,6 +40,7 @@ a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right}
 
 #mc_container {
   font-family: 'Noto Sans';
+  font-size: 1.3em;
 }
 
 .mc-word{
