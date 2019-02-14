@@ -11,7 +11,7 @@
 
 <style>
 
-a,p,h3,li,em,select, .popover-body{direction: rtl; text-align:right}
+a,p,h3,h2,li,em,select, .popover-body{direction: rtl; text-align:right}
 
 #mc_container, .mc-word {
   word-break: break-word
