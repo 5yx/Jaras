@@ -12,7 +12,7 @@
 <style>
 
 a,p,h3,h2,li,em,select, .popover-body{direction: rtl; text-align:right}
-.main-content blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
+.markdown-body blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
 
 #mc_container, .mc-word {
   word-break: break-word
