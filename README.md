@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
 <style>
 
 a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right}
@@ -35,6 +33,10 @@ a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right}
 .bs-callout-info h4 {color: #5bc0de;}
 
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("/NotoSansArabic-Regular.ttf") format("truetype");
+}
 
 #mc_container {
   font-family: 'Noto Sans';
