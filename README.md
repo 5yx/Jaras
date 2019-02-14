@@ -640,9 +640,9 @@ $(document).ready(function(){
 
 
 ##  للتواصل
-### [عبدالرحمن الفوزان](https://www.linkedin.com/in/abdulrahman-alfawzan-b901b1136/)
+[عبدالرحمن الفوزان](https://www.linkedin.com/in/abdulrahman-alfawzan-b901b1136/)
 مهندس ميكانيكي وجد نفسه في علوم البيانات
 تستطيع التواصل معه عبر [البريد الإلكتروني](mailto:abdulrahman.m.alfawzan@gmail.com).
 
-### [مصطفى العيسائي](https://www.linkedin.com/in/mustafa-esayi)
-مهتم بالبيانات وأمن المعلومات، يغرد على [@5yx](https://twitter.com/5yx)
+[مصطفى العيسائي](https://www.linkedin.com/in/mustafa-esayi)
+مهتم بالبيانات وأمن المعلومات، يغرد على [@5yx](https://twitter.com/5yx).
