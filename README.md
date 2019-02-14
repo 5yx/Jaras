@@ -12,6 +12,7 @@
 <style>
 
 a,p,h3,h2,li,em,select, .popover-body{direction: rtl; text-align:right}
+.main-content blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
 
 #mc_container, .mc-word {
   word-break: break-word
@@ -639,5 +640,5 @@ $(document).ready(function(){
 مهندس ميكانيكي وجد نفسه في علوم البيانات
 تستطيع التواصل معه عبر [البريد الإلكتروني](mailto:abdulrahman.m.alfawzan@gmail.com).
 
-### [مصطفى العيسائي](www.linkedin.com/in/mustafa-esayi)
+### [مصطفى العيسائي](https://www.linkedin.com/in/mustafa-esayi)
 مهتم بالبيانات وأمن المعلومات، يغرد على [@5yx](https://twitter.com/5yx)
