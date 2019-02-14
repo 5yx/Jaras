@@ -636,7 +636,9 @@ $(document).ready(function(){
 
 
 ###  للتواصل
-عبدالرحمن الفوزان                                            مصطفى العيسائي
-مهندس ميكانيكي وجد نفسه في علوم البيانات              مهتم بعلوم البيانات
-https://www.linkedin.com/in/abdulrahman-alfawzan-b901b1136/
-abdulrahman.m.alfawzan@gmail.com 
+#### [عبدالرحمن الفوزان](https://www.linkedin.com/in/abdulrahman-alfawzan-b901b1136/)
+مهندس ميكانيكي وجد نفسه في علوم البيانات
+تستطيع التواصل معه عبر [البريد الإلكتروني](mailto:abdulrahman.m.alfawzan@gmail.com).
+
+#### [مصطفى العيسائي](www.linkedin.com/in/mustafa-esayi)
+مهتم بالبيانات وأمن المعلومات، يغرد على [@5yx](https://twitter.com/5yx)
