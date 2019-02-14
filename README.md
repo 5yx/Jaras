@@ -212,10 +212,15 @@ Plotly.plot('words-div', {data: data, layout: layout, config:config});
 عدد الخطب: يمثل عدد الخطب المحللة لهذا الخطيب
   بعد تحديد وتطبيع المقاييس يمكنك استعراض اعلى 50 خطيب والمقارنة بينهم والمقارنة مع المتوسط العام لهذه المقاييس
 
-<div id="radar-selectors">
-  <select id="select_a" class="form-control"></select>
-  <select id="select_b" class="form-control"></select>
+<div id="radar-selectors" class="form-row">
+  <div class="col">
+    <select id="select_a" class="form-control"></select>
+  </div>
+  <div class="col">
+    <select id="select_b" class="form-control"></select>
+  </div>
 </div>
+
 <div id="radar-div"></div>
 
 <script>
