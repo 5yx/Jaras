@@ -35,7 +35,7 @@ a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right}
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url("/NotoSansArabic-Regular.ttf") format("truetype");
+    src: url("NotoSansArabic-Regular.ttf") format("truetype");
 }
 
 #mc_container {
