@@ -14,6 +14,26 @@
 a,p,h3,h2,li,em,select, .popover-body{direction: rtl; text-align:right}
 .markdown-body blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
 
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-right-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {margin-bottom: 0;}
+.bs-callout code {border-radius: 3px;}
+.bs-callout+.bs-callout {margin-top: -5px;}
+.bs-callout-warning {border-right-color: #f0ad4e;}
+.bs-callout-warning h4 {color: #f0ad4e;}
+.bs-callout-info {border-right-color: #5bc0de;}
+.bs-callout-info h4 {color: #5bc0de;}
+
+
 #mc_container, .mc-word {
   word-break: break-word
 }
@@ -132,7 +152,10 @@ a,p,h3,h2,li,em,select, .popover-body{direction: rtl; text-align:right}
 
 ## مقدمة
 مع ازدياد المحتوى العربي في علوم البيانات في السنوات الأخيرة والإقبال العالي عليه ، أقدمنا على المشاركة متخذين ممن سبقونا من الإخوة في المجال مثالا يحتذى به. نظرا لأهمية خطب الجمعة وشمولية مواضيعها وتنوع متلقيها وثرائها المعرفي من نصوص شرعية وغيرها، أثار الموضوع اهتمامنا وحماستنا لدراسته. من هذا المنطلق عكفنا على تحليل وصفي نرجوا فيه أن نكون غطينا جميع الجوانب المؤثرة على موضوع دراستنا دون قيادة القارئ إلى الوصول إلى استنتاج معين على حساب الآخر واسأل الله أن نكون وفقنا في ذلك 
-* لاستعراض أفضل للمقالة والرسوم البيانية يفضل استخدام الحاسب المحمول ومتصفح (chrome)
+
+<div class="bs-callout bs-callout-warning">
+  لاستعراض أفضل للمقالة والرسوم البيانية يفضل استخدام الحاسب المحمول ومتصفح (chrome)
+</div>
 
 ## البيانات
 * مصدر البيانات: [شبكة المنبر](http://www.alminbar.net/)
