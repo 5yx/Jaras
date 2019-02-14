@@ -11,18 +11,18 @@
 
 <style>
 
-a,p,h3,li,em{direction: rtl; text-align:right}
+a,p,h3,li,em,select, .popover-body{direction: rtl; text-align:right}
 
 #mc_container, .mc-word {
   word-break: break-word
 }
 
 .mc-word{
-  padding-left:0.2em;
+  margin-left:0.3em;
 }
 
 .mc-word:last-of-type {
-  padding-left:0;
+  margin-left:0;
 }
 
 .mc-word:hover { 
