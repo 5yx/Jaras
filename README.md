@@ -213,8 +213,8 @@ Plotly.plot('words-div', {data: data, layout: layout, config:config});
   بعد تحديد وتطبيع المقاييس يمكنك استعراض اعلى 50 خطيب والمقارنة بينهم والمقارنة مع المتوسط العام لهذه المقاييس
 
 <div id="radar-selectors">
-  <select id="select_a"></select>
-  <select id="select_b"></select>
+  <select id="select_a" class="form-control"></select>
+  <select id="select_b" class="form-control"></select>
 </div>
 <div id="radar-div"></div>
 
