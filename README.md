@@ -26,6 +26,10 @@ a,p,h3,h2,li,em,select, .popover-body{direction: rtl; text-align:right}
   margin-left:0;
 }
 
+.mc-word:last-of-type::after { 
+  content: ".";
+}
+
 .mc-word:hover { 
   color: #001f3f;
   border: 1px solid #0074D9;
