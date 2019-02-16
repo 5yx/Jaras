@@ -603,7 +603,7 @@ layout = {
   }
 };
 
-config = {displayModeBar: false, responsive: true};
+config = {displayModeBar: false, responsive: true, scrollZoom: true};
 
 Plotly.plot('aya_ref', {
   data: data,
