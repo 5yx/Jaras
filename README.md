@@ -10,7 +10,7 @@
 
 <style>
 
-a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right}
+a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right; color:green}
 .markdown-body blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
 
 .bs-callout {
