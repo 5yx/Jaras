@@ -13,6 +13,21 @@
 a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right; color:green}
 .markdown-body blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
 
+/* titles */
+h2,h3,h4{
+    color: #713070;
+}
+
+/* text */
+p,li{
+    color: #054f2e;
+}
+
+/* notes */
+.bs-callout h4 {
+    color:#84550b;
+}
+
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
