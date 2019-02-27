@@ -13,6 +13,8 @@
 a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right; color:green}
 .markdown-body blockquote {border-left: none !important; border-right: 0.3rem solid #dce6f0}
 
+.hello {color: #ccc}
+
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
@@ -248,6 +250,8 @@ Plotly.plot('words-div', {data: data, layout: layout, config:config});
 * عدد الخطب: يمثل عدد الخطب المحللة لهذا الخطيب
   
 بعد تحديد وتطبيع المقاييس يمكنك استعراض اعلى 50 خطيب والمقارنة بينهم والمقارنة مع المتوسط العام لهذه المقاييس
+
+<p class="hello"> Welcome </p>
 
 <div id="radar-selectors" class="form-row">
   <div class="col">
