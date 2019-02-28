@@ -18,10 +18,10 @@ h2,h3,h4{
     color: #713070;
 }
 
-/* text */
+/* text 
 p,li{
     color: #054f2e;
-}
+}*/
 
 /* notes */
 .bs-callout h4 {
