@@ -1,0 +1,232 @@
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css); /*font-family: 'Droid Arabic Naskh', serif;*/
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text&subset=arabic');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+html {
+	direction: rtl;
+	font-family:'Droid Arabic Naskh', serif;
+}
+
+body {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 1.8;
+	background-color: #fff;
+	font-family:'Droid Arabic Naskh', serif;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+
+/*
+ul, ol {
+	list-style: none;
+}
+*/
+
+header a{
+	border: 0;
+}
+
+header img{
+	width: 90px;
+	margin-bottom: 10px;
+}
+
+header h1 {
+	font-family: "Markazi Text";
+	font-size: 3em;
+	color: gold;
+	/* #fab81e */
+}
+
+.article_image {
+	width: 100%;
+}
+
+.container {
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 950px;
+	}
+
+	.article_image {
+		max-width: 750px;
+	}
+}
+
+h4 {
+	font-size: 1em;
+}
+
+nav {
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 10px;
+}
+
+article .heading {
+	margin-bottom: 20px;
+}
+
+article .heading h1 {
+	font-family: "Markazi Text" !important;
+}
+
+article .heading h3 {
+	font-family: "Markazi Text" !important;
+	color: #666;
+	padding-top: 1em;
+}
+
+article p, article ol {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+article .note {
+	padding: 10px;
+	background-color: gold;
+}
+
+article .note a {
+	color: gold;
+}
+
+.block {
+	padding: 10px;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.block small {
+	font-size: 14px;
+	margin-right: 4px;
+}
+
+.block small:before {
+	content: "\003C";
+}
+
+.block small:after {
+	content: "\003E";
+}
+
+.block-default {
+	color: #84a722;
+	border-bottom: 1px solid #84a722;
+}
+
+.date {
+	color: #ccc; padding: 2px;
+	/*background-color: #000;*/
+}
+
+.time {
+	color: #000;
+	margin-left: 2px;
+}
+
+.ul-right, .ol-right {
+	text-align: justify;
+}
+
+strike {
+	color: #ccc;
+}
+
+.code{
+	direction: ltr;
+	text-align: left;
+	font-size: 14px;
+	border: 1px solid #000;
+	padding: 10px;
+	word-wrap: break-word;
+	font-family: monospace;
+}
+
+footer {
+	padding: 20px;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	display: inline;
+	margin-left: 10px;
+}
+
+.figure{
+	/*padding: 10px;*/
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.figure img{
+    max-width: 100%;
+}
+
+.full-width img{
+	width: 100%;
+}
+
+.figure p{
+	text-align: center; margin-top: 10px;
+	color: #666; font-size: 14px;
+}
+
+iframe{
+	border:0; height: 340px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.right-list{
+	text-align: right;
+}
+
+.Authors {
+  display: flex; /* equal height of the children */
+}
+
+.Author {
+  flex: 1;
+  padding: 1em;
+  border: 1px solid gold;
+  margin: 1em;
+  text-align: right;
+}
+
+/*@media (max-width: 768px){
+	article .ul-right li a {
+		display: block;
+		margin-bottom: 10px;
+	}
+}*/
