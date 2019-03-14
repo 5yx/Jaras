@@ -13,6 +13,7 @@
 html {
 	direction: rtl;
 	font-family:'Droid Arabic Naskh', serif;
+	font-display: fallback;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 	line-height: 1.8;
 	background-color: #fff;
 	font-family:'Droid Arabic Naskh', serif;
+	font-display: fallback;
 }
 
 a {
@@ -47,6 +49,7 @@ header img{
 
 header h1 {
 	font-family: "Markazi Text";
+	font-display: fallback;
 	font-size: 3em;
 	color: gold;
 	/* #fab81e */
@@ -96,10 +99,12 @@ article .heading {
 
 article .heading h1 {
 	font-family: "Markazi Text" !important;
+	font-display: fallback;
 }
 
 article .heading h3 {
 	font-family: "Markazi Text" !important;
+	font-display: fallback;
 	color: #666;
 	padding-top: 1em;
 }
@@ -168,6 +173,7 @@ strike {
 	padding: 10px;
 	word-wrap: break-word;
 	font-family: monospace;
+	font-display: fallback;
 }
 
 footer {
