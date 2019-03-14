@@ -74,6 +74,8 @@ header h1 {
 	.article_image {
 		max-width: 750px;
 	}
+	
+	
 }
 
 h4 {
@@ -230,6 +232,11 @@ iframe{
   text-align: right;
 }
 
+@media (max-width: 768px){
+	.Authors {
+		flex-direction: column;
+	}
+}
 /*@media (max-width: 768px){
 	article .ul-right li a {
 		display: block;
