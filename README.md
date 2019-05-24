@@ -1,4 +1,4 @@
 # Jaras
 Jaras Blog
 
-Stats severs Statically.
+Stats served statically.
