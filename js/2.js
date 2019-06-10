@@ -1,6 +1,6 @@
 config={displayModeBar:!1,responsive:!0};
 
-//ternary sample
+//ternary-sample
 data=[{a:[.6,.3],b:[.25,.2],c:[.15,.5],cliponaxis:!1,hoverinfo:"a+b+c",marker:{color:"#000",size:10},mode:"markers+text",text:["عنصر 1","عنصر 2"],textfont:{size:13},textposition:"bottom center",type:"scatterternary"}];
 layout={dragmode:!1,autosize:!0,ternary:{aaxis:{gridcolor:"#04EDDC4C",linecolor:"#04EDDC",min:0,nticks:6,tickcolor:"#04EDDC",tickfont:{color:"#04EDDC"},ticklen:9,ticks:"outside",title:{font:{color:"#04EDDC"},text:"مقياس A"}},baxis:{gridcolor:"#FFD7004C",linecolor:"#FFD700",min:0,tickcolor:"#FFD700",tickfont:{color:"#FFD700"},ticklen:9,ticks:"outside",title:{font:{color:"#FFD700"},text:"مقياس B"}},caxis:{gridcolor:"#FF00FF4C",linecolor:"#FF00FF",min:0,tickcolor:"#FF00FF",tickfont:{color:"#FF00FF"},ticklen:9,ticks:"outside",title:{font:{color:"#FF00FF"},text:"مقياس C"}},sum:1},xaxis:{autorange:!0},yaxis:{autorange:!0}};
 
@@ -14,8 +14,16 @@ layout={height:700,autosize:!0,ternary:{aaxis:{title:{text:"الحلويات"}},
 Plotly.plot("ternary-data",{data:data,layout:layout,config:config});
 
 
-//heatmap
+//heatmap-data
 data=[{x:['حلويات','مقبلات','أطباق رئيسية'],y:['حلويات','مقبلات','أطباق رئيسية'],z:[[284,6,0],[19,169,142],[10,108,320]],autocolorscale:!0,hoverinfo:"z",showscale:!0,type:"heatmap"}];
 layout={autosize:!0,font:{size:16},colorscale:{sequential:[[0,"#eee"],[1,"#ffd700"]]},xaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"تنبؤ"},type:"category"},yaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"فعلي"},type:"category"}};
 
 Plotly.plot("heatmap-data",{data:data,layout:layout,config:config});
+
+
+//heatmap-digging
+
+data = [{y:[['الشرط','بيكنج بودر','بيكنج بودر','بيكنج بودر','(فلفل أسود,ثوم)','(فلفل أسود,ثوم)','(فلفل أسود,ثوم)','(فلفل أسود,ثوم)','(فلفل أسود,ثوم)'],['المحتمل','بيض','سكر','طحين','بصل','زيت زيتون','(ملح,بصل)','(ملح,زيت زيتون)','ملح']],z:['Confidence','0.7547','0.7496','0.7342','0.5613','0.5081','0.5255','0.4767','0.9294'],autocolorscale:!1,colorscale:[["0","#ffffe5"],["0.125","#f7fcb9"],["0.25","#d9f0a3"],["0.375","#addd8e"],["0.5","#78c679"],["0.625","#41ab5d"],["0.75","#238443"],["0.875","#006837"],["1","#004529"]],connectgaps:!1,hoverinfo:"y+z",reversescale:!1,showscale:!0,transpose:!1,type:"heatmap",xgap:0,ygap:0,zsmooth:!1}];
+layout={autosize:!0,dragmode:"orbit",font:{size:14},hovermode:"closest",margin:{r:80},separators:".,",xaxis:{autorange:!0,fixedrange:!0,range:[-.5,.5],rangeslider:{autorange:!0,range:[-.5,.5],visible:!1},showgrid:!1,showticklabels:!1,zeroline:!1},yaxis:{automargin:!0,autorange:!0,dtick:0,exponentformat:"none",mirror:!1,range:[-.5,8.5],separatethousands:!1,showline:!0,showspikes:!1,side:"left",spikethickness:2,tick0:0,tickangle:"auto",tickformat:"",tickmode:"linear",ticks:"",type:"multicategory"}};
+
+Plotly.plot("heatmap-digging",{data:data,layout:layout,config:config});
