@@ -89,10 +89,135 @@
 			</div>
       
       <p>
-        نص المصفوفة
+        في روما وعلى مائدة القيصر تحديدا وثق التاريخ أول وجبة مكونة من ثلاثة أصناف (مقبلات - طبق رئيسي - حلويات) حتى وصل الفرنسيون لاحقا إلى ستة وسبعة أصناف ولكن مالذي يجعل الطبق مقبلات وليس طبقا رئيسيا على سبيل المثال؟ هل هو الترتيب والتسلسل فالطبق المقدم أولا هو من المقبلات مهما كان محتواه؟ أم هي المكونات ولكن بعض الأطباق الآسيوية الرئيسية حالية الطعم وهذا قد يوقعنا ببعض الحرج, ربما هي الكمية؟ لا نعلم ولكن سنحاول توقع تصنيف الطبق الموجود بالموقع بناء على المكونات والكمية
       </p>
+			
+			<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-lqy6{text-align:right;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg">
+  <tr>
+    <th class="tg-lqy6">الصنف</th>
+    <th class="tg-0lax">...</th>
+    <th class="tg-lqy6">صدر دجاج</th>
+    <th class="tg-lqy6">سكر</th>
+    <th class="tg-lqy6">ثوم</th>
+    <th class="tg-lqy6">بصل</th>
+    <th class="tg-lqy6">الطبخة</th>
+  </tr>
+  <tr>
+    <td class="tg-lqy6">مقبلات</td>
+    <td class="tg-0lax">...</td>
+    <td class="tg-baqh">250</td>
+    <td class="tg-baqh">0</td>
+    <td class="tg-baqh">5</td>
+    <td class="tg-baqh">20</td>
+    <td class="tg-lqy6">سلطة سيزر</td>
+  </tr>
+  <tr>
+    <td class="tg-lqy6">وجبة رئيسية</td>
+    <td class="tg-0lax">...</td>
+    <td class="tg-baqh">500</td>
+    <td class="tg-baqh">0</td>
+    <td class="tg-baqh">15</td>
+    <td class="tg-baqh">20</td>
+    <td class="tg-lqy6">مكبوس دجاج</td>
+  </tr>
+</table></div>
+			
+			<p>
+			قمنا بمعالجة البيانات للوصول إلى هذه الصيغة حيث يمثل كل عمود أحد المكونات وكمية الجرامات المطلوبة أما الصنف فتم اعتماد ما هو مصنف بالموقع. قمنا ببناء نموذج غابة عشوائية (هايبرلينك مقالة الرسم ذيك) (Random Forest) وتطبيق آلية شبكة البحث (Grid Search) لإيجاد مدخلات الضبط (Hyperparameters) الأنسب لتصنيف الطبخات بدقة عالية. 
+تم اختبار النموذج على 1058 طبخة صنف منها 773 طبخة بشكل صحيح بدقة 73%	
+			</p>
+			
 			<div id="heatmap-data"></div>
       
+			<p>
+				توضح لنا المصفوفة قدرة النموذج على تمييز الحلوات بشكل واضح بناء على المكونات والكميات حيث تنبأ ب284 من أصل 290 صنف حلويات بشكل صحيح ولكن يجد صعوبة في التمييز بين المقبلات والأطباق الرئيسية
+			</p>
+			
+			<p class="note">
+				ملاحظة: تم اختبار عدد آخر من النماذج وكانت الدقة تتراوح بين 55% -  70%
+			</p>
+			
+			
+			
+			<div class="heading">
+				<h3>التنقيب عن البيانات</h3>
+			</div>   			
+			<p>
+				بالرغم من الفوبيا التي أعاني منها مع المطبخ إلا أنه على مر السنين تردد على مسامعي جمل مثل "لا تكثر من أ ترى ما حطيت إلا ملعقتين من ب" وغيرها مما يشير إلى علاقة غامضة لأمثالي بين العناصر دفعتني لاستكشافها ولإيجاد هذه العلاقات قمنا باستخدام خوارزمية Apriori وقواعد العلاقات (Association Rules) 
+			</p>
+			
+			
+			<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-uys7{border-color:inherit;text-align:center}
+.tg .tg-lqy6{text-align:right;vertical-align:top}
+.tg .tg-quj4{border-color:inherit;text-align:right}
+.tg .tg-xldj{border-color:inherit;text-align:left}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg">
+  <tr>
+    <th class="tg-quj4">الصنف</th>
+    <th class="tg-quj4">...</th>
+    <th class="tg-quj4">صدر دجاج</th>
+    <th class="tg-quj4">سكر</th>
+    <th class="tg-lqy6">ثوم</th>
+    <th class="tg-lqy6">بصل</th>
+    <th class="tg-lqy6">الطبخة</th>
+  </tr>
+  <tr>
+    <td class="tg-quj4">مقبلات</td>
+    <td class="tg-xldj">...</td>
+    <td class="tg-uys7">1</td>
+    <td class="tg-uys7">0</td>
+    <td class="tg-baqh">1</td>
+    <td class="tg-baqh">1</td>
+    <td class="tg-lqy6">سلطة سيزر</td>
+  </tr>
+  <tr>
+    <td class="tg-quj4">وجبة رئيسية</td>
+    <td class="tg-xldj">...</td>
+    <td class="tg-uys7">1</td>
+    <td class="tg-uys7">0</td>
+    <td class="tg-baqh">1</td>
+    <td class="tg-baqh">1</td>
+    <td class="tg-lqy6">مكبوس دجاج</td>
+  </tr>
+</table></div>
+			
+			<p>
+				في دراسة العلاقات نحن لا نكترث للكميات المكونة للوصفة وإنما هل تحتوي الطبخة على هذا العنصر أم لا؟ عندها نقوم بإحصاء بايزي (Bayesian) شرطي للعناصر بمعنى أننا نسأل أسئلة مثل في حال وجود البصل (الشرط) في طبخة ما فما احتمالية وجود الملح كذلك؟ وقبل اعتماد نتائج الخوارزمية نقوم بمراعاة مدخلين أساسيين هما: 
+			</p>
+			
+			<ul>
+				<li>الدعم : يمثل نسبة تواجد العنصر في جميع الطبخات (مثال: البصل يتواجد في 31% من الطبخات المحللة)</li>
+				<li>معدل الارتباط (lift): يمثل نسبة تواجد عنصر مع عنصر آخر/نسبة تواجده بغياب العنصر الآخر</li>
+			</ul>
+			
+			<p>
+				ضبط الدعم يعالج إشكالية العناصر ذات الحضور الضعيف فلا يصح مثلا القول بأن هناك علاقة بين الزبدة والتمر إذا كان التمر استخدم في طبخة واحدة فقط فالعينة أقل مما يجب لإطلاق هذا الحكم, وضبط معدل الارتباط يعالج إشكالية العناصر ذات الحضور الطاغي ففي حال تواجد عنصرين في أغلب الطبخات ستكون نسبة تواجدهما سوية عالية ولا يعني بالضرورة ارتباطهما ببعض لذلك نقوم بالتحقق من العلاقة في حال غياب العنصر الآخر هل تتأثر نسبة الحضور أم لا.
+			</p>
+			
+			<p>
+				قمنا بضبط الدعم ب8% من الطبخات (أكثر من 400 طبخة لكل عنصر) ومعدل الارتباط ب>1 (تواجد العنصرين سوية أعلى من تواجدهما مستقلين) 
+			</p>
+			
+			-------------------HEATMAP
+			
+			<p>
+				تم إيجاد 57 علاقة بين العناصر وهذه عينة من النتائج حيث نجد مثلا أنه إذا احتوت الطبخة على فلفل أسود وثوم ففي 92% من الحالات تواجد الملح كذلك
+			</p>
+			
 			<div class="heading">
 				<h3>تمثيل المثلث</h3>
 			</div>      
@@ -111,6 +236,35 @@
 <div id="ternary-data"></div>
 
 <p>قمنا بحساب مساهمة كل مكون لأصناف الوجبات، ثم تلوين الخضار والفواكه باللون الأخضر وباقي المكونات باللون الأحمر لإضافة بعد آخر للتمثيل.</p>		
+			
+			<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0ord{text-align:right}
+.tg .tg-s6z2{text-align:center}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg">
+  <tr>
+    <th class="tg-s6z2">حلويات</th>
+    <th class="tg-s6z2">طبق رئيسي</th>
+    <th class="tg-s6z2">مقبلات</th>
+    <th class="tg-s6z2">مكون</th>
+  </tr>
+  <tr>
+    <td class="tg-s6z2">44880</td>
+    <td class="tg-s6z2">15919</td>
+    <td class="tg-s6z2">8105</td>
+    <td class="tg-0ord">حليب (جرام)</td>
+  </tr>
+  <tr>
+    <td class="tg-s6z2">65%</td>
+    <td class="tg-s6z2">23%</td>
+    <td class="tg-s6z2">12%</td>
+    <td class="tg-0ord">حليب (نسبة مئوية)</td>
+  </tr>
+</table></div>
+			
 		</article>
 
 		<footer>
