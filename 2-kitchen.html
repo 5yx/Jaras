@@ -39,7 +39,11 @@
 			font-family: 'Noto Sans';
 			src: url("NotoSansArabic-Regular.ttf") format("truetype");
 		}
-		 
+		
+		div.graph {
+			margin-bottom: 40px;
+		}
+		
 		table {
 			border-spacing: 1;
 			border-collapse: collapse;
@@ -52,13 +56,18 @@
 		table * {
 			position: relative;
 		}
+		
+		table th {
+			font-weight: bold;
+		}
+		
 		table td, table th {
 			padding-right: 8px;
+			text-align: right;
 		}
 		table thead tr {
 			height: 50px;
 			font-size: 16px;
-			font-weight: bold !important;
 			border-bottom: 1px solid #DAA520;
 		}
 		table tbody tr {
@@ -69,7 +78,7 @@
 			border: 0;
 		}
 		table td, table th {
-			text-align: right;
+			
 		}
 	</style>
 
@@ -165,7 +174,7 @@
 				تم اختبار النموذج على 1058 طبخة صنف منها 773 طبخة بشكل صحيح بدقة 73%	
 			</p>
 			
-			<div id="heatmap-data"></div>
+			<div id="heatmap-data" class="graph"></div>
       
 			<p>
 				توضح لنا المصفوفة قدرة النموذج على تمييز الحلويات بشكل واضح بناء على المكونات والكميات حيث تنبأ ب284 من أصل 290 صنف حلويات بشكل صحيح ولكن يجد صعوبة في التمييز بين المقبلات والأطباق الرئيسية
@@ -233,7 +242,7 @@
 				قمنا بضبط الدعم ب8% من الطبخات (أكثر من 400 طبخة لكل عنصر) ومعدل الارتباط ب>1 (تواجد العنصرين سوية أعلى من تواجدهما مستقلين) 
 			</p>
 			
-			<div id="heatmap-digging"></div>
+			<div id="heatmap-digging" class="graph"></div>
 			
 			<p>
 				تم إيجاد 57 علاقة بين العناصر وهذه عينة من النتائج حيث نجد مثلا أنه إذا احتوت الطبخة على فلفل أسود وثوم ففي 92% من الحالات تواجد الملح كذلك
@@ -250,11 +259,11 @@
 المتغير الأول + المتغير الثاني + المتغير الثالث = ثابت
 </p>
 
-<div id="ternary-sample"></div>
+<div id="ternary-sample" class="graph"></div>
 
 <p>المميز في هذا الرسم هو كمية المعلومات الضخمة التي بإمكانك إيصالها للمتلقي بسرعة كبيرة ورسم واحد، فموقع عنصر موجود في هذا الرسم هو عبارة عن مخطط دائري (pie chart) مما يعني أن 300 عنصر ممثلة بهذا الرسم تغنيك عن 300 مخطط دائري، إضافةً إلى سهولة قراءة وتفسير وبديهية المثلث فعندما ترى العنصر مائلًا إلى زاوية على حساب أخرى تدرك مباشرة تسيّد هذا المتغير على المتغيرات الأخرى متيحًا لك إمكانية المقارنة البصرية دون اللجوء إلى قراءة الأرقام لكل عنصر.</p>
 
-<div id="ternary-data"></div>
+<div id="ternary-data" class="graph"></div>
 
 <p>قمنا بحساب مساهمة كل مكون لأصناف الوجبات، ثم تلوين الخضار والفواكه باللون الأخضر وباقي المكونات باللون الأحمر لإضافة بعد آخر للتمثيل.</p>		
 			
