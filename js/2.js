@@ -15,7 +15,7 @@ Plotly.plot("heatmap-digging",{data:data,layout:layout,config:config});
 
 //ternary-sample
 data=[{a:[.6,.3],b:[.25,.2],c:[.15,.5],cliponaxis:!1,hoverinfo:"a+b+c",marker:{color:"#000",size:10},mode:"markers+text",text:["عنصر 1","عنصر 2"],textfont:{size:13},textposition:"bottom center",type:"scatterternary"}];
-layout={margin:{t:0,l:0,r:0,b:0},autosize:!0,font:{size:16},colorscale:{sequential:[[0,"#eee"],[1,"#ffd700"]]},xaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"تنبؤ"},type:"category"},yaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"فعلي"},type:"category"},margin:{t:0,l:0,r:0,b:0},template:{data:{heatmap:[{type:"heatmap",colorbar:{ticks:"",outlinewidth:0},autocolorscale:!0}]}}};
+layout={margin:{t:20,l:20,r:20,b:20},autosize:!0,font:{size:16},colorscale:{sequential:[[0,"#eee"],[1,"#ffd700"]]},xaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"تنبؤ"},type:"category"},yaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"فعلي"},type:"category"},margin:{t:0,l:0,r:0,b:0},template:{data:{heatmap:[{type:"heatmap",colorbar:{ticks:"",outlinewidth:0},autocolorscale:!0}]}}};
 Plotly.plot('ternary-sample',{data:data,layout:layout,config:config});
 
 
