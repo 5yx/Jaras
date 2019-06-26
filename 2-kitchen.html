@@ -10,8 +10,8 @@
 	
 	<meta property="og:title" content="Jaras | جرس - المطبخ">
 	<meta property="og:description" content="وصفات المطبخ لا ينتهي مصيرها في البطن فقط، علوم البيانات تلتقي بالأكل اللذيذ">
-	<meta property="og:image" content="https://jaras.cool/images/jaras_logo.png">
-	<meta property="og:url" content="https://jaras.cool/2-kitchen.html">
+	<meta property="og:image" content="https://jaras.cool/images/2/featured.png">
+	<meta property="og:url" content="https://jaras.cool/2-kitchen">
 	<meta name="twitter:card" content="summary_large_image">
 	
 	<meta name="msapplication-TileImage" content="images/favicon.png">
@@ -32,7 +32,9 @@
 	<style>
 
 		/*a,p,h3,h2,h4,li,em,select, .popover-body{direction: rtl; text-align:right;}*/
-
+		
+		h3{ font-size: 1.75rem;}
+		
 		@font-face {
 			font-family: 'Noto Sans';
 			src: url("NotoSansArabic-Regular.ttf") format("truetype");
@@ -41,12 +43,11 @@
 		table {
 			border-spacing: 1;
 			border-collapse: collapse;
-			border-radius: 6px;
 			overflow: hidden;
-			max-width: 800px;
 			width: 100%;
 			margin: 0 auto;
 			position: relative;
+			padding-bottom: 20px;
 		}
 		table * {
 			position: relative;
@@ -56,12 +57,13 @@
 		}
 		table thead tr {
 			height: 50px;
-			background: #FFD700;
 			font-size: 16px;
+			font-weight: bold;
+			border-bottom: 1px solid #DAA520;
 		}
 		table tbody tr {
 			height: 48px;
-			border-bottom: 1px solid #DAA520;
+			border-bottom: 1px solid #eee;
 		}
 		table tbody tr:last-child {
 			border: 0;
@@ -89,7 +91,7 @@
 
 		<article>
 			<div class="heading">
-				<h1>مطبخ</h1>
+				<h1>المطبخ</h1>
 				<h4><span class="date">1 مارس 2019، 12:00 ظهرًا.</span></h4>
 			</div>
 
@@ -110,7 +112,7 @@
         وكما يتصفح الشيف الوصفات، ويقرأ مكوناتها وطريقة التحضير، يقوم الكود بجلب جميع صفحات الوصفات، واستخراج البيانات (Data Scraping) من وقت التقديم ونوع المطبخ والطبق إلى الأصناف المستخدمة في كل وصفة وخطواتها. وفصلها بحيث تصبح جاهزة للتحليل.
       </p>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="580" height="165" direction="ltr"><path fill="none" d="M-1-1h582v167H-1z"/><g><rect width="158" height="108" x="411.8" y="7.4" fill="#ccc" rx="4"/><path fill="#fff" d="M415.8 19.5h149.5v91.8H415.8z"/><path fill="#DDD" d="M510.5 79.4h48v4.8h-48zM486.3 33.5h72.5v43.3h-72.5zM510.5 23h48v7.8h-48z"/><ellipse cx="561.5" cy="14" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="552.5" cy="14" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="543.5" cy="14" fill="#fff" rx="3.5" ry="3.5"/><path fill="gold" d="M524.8 87.2h33.8V92h-33.8z"/><path fill="#DDD" d="M496.8 94.4h61.5v4.8h-61.5z"/><path fill="gold" d="M524.8 101.7h33.8v4.8h-33.8z"/><path fill="#DDD" d="M458 33.7h24.5v4.8H458z"/><path fill="#ddd" d="M457.8 41.4h24.8v4.8h-24.8z"/><path fill="#DDD" d="M457.8 48.7h24.5v4.8h-24.5z"/><path fill="#ddd" d="M457.8 56h24.8v4.8h-24.8z"/><path fill="gold" d="M436 33.9h19.2v4.8H436zM430.5 41.7h24.8v4.8h-24.8z"/><path fill="#DDD" d="M425.5 48.9H455v4.8h-29.5z"/><path fill="gold" d="M430.5 56.2h24.8V61h-24.8z"/><path fill="#ddd" d="M423.5 64.2h59v41.5h-59z"/><g><rect width="158" height="108" x="402.3" y="21.9" fill="#ccc" rx="4"/><path fill="#fff" d="M406.3 34h149.5v91.8H406.3z"/><path fill="#DDD" d="M501.1 93.9h48v4.8h-48zM476.8 48h72.5v43.3h-72.5zM501.1 37.5h48v7.8h-48z"/><ellipse cx="552.1" cy="28.5" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="543.1" cy="28.5" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="534.1" cy="28.5" fill="#fff" rx="3.5" ry="3.5"/><path fill="gold" d="M515.3 101.7h33.8v4.8h-33.8z"/><path fill="#DDD" d="M487.3 108.9h61.5v4.8h-61.5z"/><path fill="gold" d="M515.3 116.2h33.8v4.8h-33.8z"/><path fill="#DDD" d="M448.6 48.2h24.5V53h-24.5z"/><path fill="#ddd" d="M448.3 55.9h24.8v4.8h-24.8z"/><path fill="#DDD" d="M448.3 63.2h24.5V68h-24.5z"/><path fill="#ddd" d="M448.3 70.5h24.8v4.8h-24.8z"/><path fill="gold" d="M426.6 48.4h19.2v4.8h-19.2zM421.1 56.2h24.8V61h-24.8z"/><path fill="#DDD" d="M416.1 63.4h29.5v4.8h-29.5z"/><path fill="gold" d="M421.1 70.7h24.8v4.8h-24.8z"/><path fill="#ddd" d="M414.1 78.7h59v41.5h-59z"/></g><g><path fill="#fff" stroke="#ccc" stroke-width="1.5" d="M21.9 22.9h155.2v105.8H21.9z"/><path fill="#DDD" d="M30.3 39.9h139.5v5.4H30.3z"/><path fill="gold" d="M30 49.9h139.7v67.5H30z"/><path fill="none" stroke="#fff" stroke-width="5" d="M156.3 32.1v92.3M119.1 32.1v92.3M82 32.1v92.3M52.8 32.1v92.3M100.3 38.5v81.7"/><path fill="none" stroke="#fff" stroke-width="5" d="M29.2 57.5h141.4M29.6 67.7H171M29.2 78.2h141.4M29.2 88.5h141.4M29.2 98.9h141.4M29.2 109.1h141.4"/></g><path fill="gold" d="M296.6 89l-2-6.5 1.6-1.5 6.6 1.8c.7-1 1.3-2 1.8-3.2l-4.9-4.7.6-2.1L307 71v-1.8-1.8l-6.6-1.7a18 18 0 0 0-.6-2.1l5-4.7-1.9-3.2-6.6 1.8-1.5-1.5 1.9-6.6c-1-.7-2.1-1.3-3.2-1.8l-4.8 4.9-2-.6-1.7-6.6h-3.7l-1.7 6.6-2 .6-4.8-4.9c-1.1.5-2.2 1.1-3.2 1.8l1.9 6.6-1.6 1.5-6.5-1.8-1.9 3.2 5 4.7a18 18 0 0 0-.6 2.1l-6.6 1.7-.1 1.8v1.8l6.7 1.7.5 2.1-4.9 4.7 1.9 3.2 6.5-1.8 1.6 1.5-1.9 6.6c1 .7 2 1.3 3.2 1.8l4.7-4.9 2.1.6 1.7 6.6h3.7l1.6-6.6 2.2-.6 4.7 4.9c1-.5 2.2-1.1 3.2-1.8zM283 77.6a8.2 8.2 0 1 1 0-16.4 8.2 8.2 0 0 1 0 16.4zm37.4 17.1a12 12 0 0 0-.6-4l3-4.2c-.4-.9-1-1.7-1.5-2.4l-5.1 1c-1-.8-2.2-1.5-3.5-2l-1.5-5c-.9-.2-1.8-.3-2.8-.3l-2.3 4.7a12 12 0 0 0-3.8 1.4l-4.8-2-2 2.1 2.2 4.7a12 12 0 0 0-1.3 3.9L292 95c0 1 .2 1.9.4 2.8l5 1.3a12 12 0 0 0 2.3 3.3l-.9 5.2c.8.6 1.6 1 2.4 1.4l4.2-3.1c1.3.3 2.6.4 4 .3l3.5 3.9a17.5 17.5 0 0 0 2.6-1l.1-5.2a12 12 0 0 0 2.8-3l5.2-.3 1-2.6-4.1-3.4zm-10 4.9a5.6 5.6 0 1 1-4-10.5 5.6 5.6 0 0 1 4 10.5z"/><path fill="#ccc" d="M238 57.6l-20.1 20.1 20 20-11.4 11.5-31.6-31.5 31.6-31.5M381 57.6l-20.1 20.1 20 20-11.4 11.5-31.6-31.5 31.6-31.5"/><text x="432.2" y="154.7" stroke="#bf0000" stroke-width="0">صفحات ويب</text><text x="243" y="155.5" stroke="#bf0000" stroke-width="0">جمع ومعالجة</text><text x="75.9" y="154.7" stroke="#bf0000" stroke-width="0">بيانات</text></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewbox="0 0 960 500" direction="ltr"><path fill="none" d="M-1-1h582v167H-1z"/><g><rect width="158" height="108" x="411.8" y="7.4" fill="#ccc" rx="4"/><path fill="#fff" d="M415.8 19.5h149.5v91.8H415.8z"/><path fill="#DDD" d="M510.5 79.4h48v4.8h-48zM486.3 33.5h72.5v43.3h-72.5zM510.5 23h48v7.8h-48z"/><ellipse cx="561.5" cy="14" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="552.5" cy="14" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="543.5" cy="14" fill="#fff" rx="3.5" ry="3.5"/><path fill="gold" d="M524.8 87.2h33.8V92h-33.8z"/><path fill="#DDD" d="M496.8 94.4h61.5v4.8h-61.5z"/><path fill="gold" d="M524.8 101.7h33.8v4.8h-33.8z"/><path fill="#DDD" d="M458 33.7h24.5v4.8H458z"/><path fill="#ddd" d="M457.8 41.4h24.8v4.8h-24.8z"/><path fill="#DDD" d="M457.8 48.7h24.5v4.8h-24.5z"/><path fill="#ddd" d="M457.8 56h24.8v4.8h-24.8z"/><path fill="gold" d="M436 33.9h19.2v4.8H436zM430.5 41.7h24.8v4.8h-24.8z"/><path fill="#DDD" d="M425.5 48.9H455v4.8h-29.5z"/><path fill="gold" d="M430.5 56.2h24.8V61h-24.8z"/><path fill="#ddd" d="M423.5 64.2h59v41.5h-59z"/><g><rect width="158" height="108" x="402.3" y="21.9" fill="#ccc" rx="4"/><path fill="#fff" d="M406.3 34h149.5v91.8H406.3z"/><path fill="#DDD" d="M501.1 93.9h48v4.8h-48zM476.8 48h72.5v43.3h-72.5zM501.1 37.5h48v7.8h-48z"/><ellipse cx="552.1" cy="28.5" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="543.1" cy="28.5" fill="#fff" rx="3.5" ry="3.5"/><ellipse cx="534.1" cy="28.5" fill="#fff" rx="3.5" ry="3.5"/><path fill="gold" d="M515.3 101.7h33.8v4.8h-33.8z"/><path fill="#DDD" d="M487.3 108.9h61.5v4.8h-61.5z"/><path fill="gold" d="M515.3 116.2h33.8v4.8h-33.8z"/><path fill="#DDD" d="M448.6 48.2h24.5V53h-24.5z"/><path fill="#ddd" d="M448.3 55.9h24.8v4.8h-24.8z"/><path fill="#DDD" d="M448.3 63.2h24.5V68h-24.5z"/><path fill="#ddd" d="M448.3 70.5h24.8v4.8h-24.8z"/><path fill="gold" d="M426.6 48.4h19.2v4.8h-19.2zM421.1 56.2h24.8V61h-24.8z"/><path fill="#DDD" d="M416.1 63.4h29.5v4.8h-29.5z"/><path fill="gold" d="M421.1 70.7h24.8v4.8h-24.8z"/><path fill="#ddd" d="M414.1 78.7h59v41.5h-59z"/></g><g><path fill="#fff" stroke="#ccc" stroke-width="1.5" d="M21.9 22.9h155.2v105.8H21.9z"/><path fill="#DDD" d="M30.3 39.9h139.5v5.4H30.3z"/><path fill="gold" d="M30 49.9h139.7v67.5H30z"/><path fill="none" stroke="#fff" stroke-width="5" d="M156.3 32.1v92.3M119.1 32.1v92.3M82 32.1v92.3M52.8 32.1v92.3M100.3 38.5v81.7"/><path fill="none" stroke="#fff" stroke-width="5" d="M29.2 57.5h141.4M29.6 67.7H171M29.2 78.2h141.4M29.2 88.5h141.4M29.2 98.9h141.4M29.2 109.1h141.4"/></g><path fill="gold" d="M296.6 89l-2-6.5 1.6-1.5 6.6 1.8c.7-1 1.3-2 1.8-3.2l-4.9-4.7.6-2.1L307 71v-1.8-1.8l-6.6-1.7a18 18 0 0 0-.6-2.1l5-4.7-1.9-3.2-6.6 1.8-1.5-1.5 1.9-6.6c-1-.7-2.1-1.3-3.2-1.8l-4.8 4.9-2-.6-1.7-6.6h-3.7l-1.7 6.6-2 .6-4.8-4.9c-1.1.5-2.2 1.1-3.2 1.8l1.9 6.6-1.6 1.5-6.5-1.8-1.9 3.2 5 4.7a18 18 0 0 0-.6 2.1l-6.6 1.7-.1 1.8v1.8l6.7 1.7.5 2.1-4.9 4.7 1.9 3.2 6.5-1.8 1.6 1.5-1.9 6.6c1 .7 2 1.3 3.2 1.8l4.7-4.9 2.1.6 1.7 6.6h3.7l1.6-6.6 2.2-.6 4.7 4.9c1-.5 2.2-1.1 3.2-1.8zM283 77.6a8.2 8.2 0 1 1 0-16.4 8.2 8.2 0 0 1 0 16.4zm37.4 17.1a12 12 0 0 0-.6-4l3-4.2c-.4-.9-1-1.7-1.5-2.4l-5.1 1c-1-.8-2.2-1.5-3.5-2l-1.5-5c-.9-.2-1.8-.3-2.8-.3l-2.3 4.7a12 12 0 0 0-3.8 1.4l-4.8-2-2 2.1 2.2 4.7a12 12 0 0 0-1.3 3.9L292 95c0 1 .2 1.9.4 2.8l5 1.3a12 12 0 0 0 2.3 3.3l-.9 5.2c.8.6 1.6 1 2.4 1.4l4.2-3.1c1.3.3 2.6.4 4 .3l3.5 3.9a17.5 17.5 0 0 0 2.6-1l.1-5.2a12 12 0 0 0 2.8-3l5.2-.3 1-2.6-4.1-3.4zm-10 4.9a5.6 5.6 0 1 1-4-10.5 5.6 5.6 0 0 1 4 10.5z"/><path fill="#ccc" d="M238 57.6l-20.1 20.1 20 20-11.4 11.5-31.6-31.5 31.6-31.5M381 57.6l-20.1 20.1 20 20-11.4 11.5-31.6-31.5 31.6-31.5"/><text x="432.2" y="154.7" stroke="#bf0000" stroke-width="0">صفحات ويب</text><text x="243" y="155.5" stroke="#bf0000" stroke-width="0">جمع ومعالجة</text><text x="75.9" y="154.7" stroke="#bf0000" stroke-width="0">بيانات</text></g></svg>
 			
       
 			<p>
@@ -118,7 +120,7 @@
       </p>
       
 			<div class="heading">
-				<h3>مصفوفة الفوضى</h3>
+				<h3>مصفوفة الدقة</h3>
 			</div>
       
       <p>
@@ -163,7 +165,7 @@
 			<div id="heatmap-data"></div>
       
 			<p>
-				توضح لنا المصفوفة قدرة النموذج على تمييز الحلوات بشكل واضح بناء على المكونات والكميات حيث تنبأ ب284 من أصل 290 صنف حلويات بشكل صحيح ولكن يجد صعوبة في التمييز بين المقبلات والأطباق الرئيسية
+				توضح لنا المصفوفة قدرة النموذج على تمييز الحلويات بشكل واضح بناء على المكونات والكميات حيث تنبأ ب284 من أصل 290 صنف حلويات بشكل صحيح ولكن يجد صعوبة في التمييز بين المقبلات والأطباق الرئيسية
 			</p>
 			
 			<p class="note">
@@ -176,7 +178,7 @@
 				<h3>التنقيب عن البيانات</h3>
 			</div>   			
 			<p>
-				بالرغم من الفوبيا التي أعاني منها مع المطبخ إلا أنه على مر السنين تردد على مسامعي جمل مثل "لا تكثر من أ ترى ما حطيت إلا ملعقتين من ب" وغيرها مما يشير إلى علاقة غامضة لأمثالي بين العناصر دفعتني لاستكشافها ولإيجاد هذه العلاقات قمنا باستخدام خوارزمية Apriori وقواعد العلاقات (Association Rules) 
+			على مر السنين يتردد على مسامعنا جمل مثل "لا تكثر من أ ترى ما حطيت إلا ملعقتين من ب" وغيرها مما يشير إلى علاقة مجهولة بين العناصر لمن لا يطبخ دفعتنا لاستكشافها. ولإيجاد هذه العلاقات قمنا باستخدام خوارزمية Apriori وقواعد العلاقات (Association Rules)
 			</p>
 			
 			
@@ -262,9 +264,9 @@
   </tr></thead>
   <tbody><tr>
     <td>حليب (جرام)</td>
-    <td>8105</td>
-    <td>15919</td>
-    <td>44880</td>
+    <td>8105جم</td>
+    <td>15919جم</td>
+    <td>44880جم</td>
   </tr>
   <tr>
     <td>حليب (نسبة مئوية)</td>
