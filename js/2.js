@@ -15,7 +15,7 @@ Plotly.plot("heatmap-digging",{data:data,layout:layout,config:config});
 
 //ternary-sample
 data=[{a:[.6,.3],b:[.25,.2],c:[.15,.5],cliponaxis:!1,hoverinfo:"a+b+c",marker:{color:"#000",size:10},mode:"markers+text",text:["عنصر 1","عنصر 2"],textfont:{size:13},textposition:"bottom center",type:"scatterternary"}];
-layout={margin:{t:20,l:20,r:20,b:20},autosize:!0,font:{size:16},colorscale:{sequential:[[0,"#eee"],[1,"#ffd700"]]},xaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"تنبؤ"},type:"category"},yaxis:{automargin:!0,autorange:!0,showticklabels:!0,ticks:"outside",title:{text:"فعلي"},type:"category"},margin:{t:0,l:0,r:0,b:0},template:{data:{heatmap:[{type:"heatmap",colorbar:{ticks:"",outlinewidth:0},autocolorscale:!0}]}}};
+layout={dragmode:!1,autosize:!0,ternary:{aaxis:{gridcolor:"#04EDDC4C",linecolor:"#04EDDC",min:0,nticks:6,tickcolor:"#04EDDC",tickfont:{color:"#04EDDC"},ticklen:9,ticks:"outside",title:{font:{color:"#04EDDC"},text:"مقياس A"}},baxis:{gridcolor:"#FFD7004C",linecolor:"#FFD700",min:0,tickcolor:"#FFD700",tickfont:{color:"#FFD700"},ticklen:9,ticks:"outside",title:{font:{color:"#FFD700"},text:"مقياس B"}},caxis:{gridcolor:"#FF00FF4C",linecolor:"#FF00FF",min:0,tickcolor:"#FF00FF",tickfont:{color:"#FF00FF"},ticklen:9,ticks:"outside",title:{font:{color:"#FF00FF"},text:"مقياس C"}},sum:1},xaxis:{autorange:!0},yaxis:{autorange:!0}};
 Plotly.plot('ternary-sample',{data:data,layout:layout,config:config});
 
 
