@@ -4,7 +4,8 @@ laws_sections = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
 
 
 $(document).ready(function(){
-	var svg_parent = document.querySelector('#nodesgraph');
+	var html_parent = document.getElementById("nodes_graph")
+	var svg_parent = html_parent.contentDocument.querySelector('#nodesgraph');
 	svg_parent.querySelectorAll("circle").forEach(function(svg_circle, i){
 		svg_circle.dataset.toggle = "popover";
 		svg_circle.dataset.trigger = "hover";
