@@ -4,14 +4,13 @@ laws_sections = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
 
 
 $(document).ready(function(){
-	var html_parent = document.getElementById("nodes_graph")
-	html_parent.contentDocument.querySelectorAll("circle").forEach(function(svg_circle, i){
+	var svg_parent = document.querySelector('#nodesgraph');
+	svg_parent.querySelectorAll("circle").forEach(function(svg_circle, i){
 		svg_circle.dataset.toggle = "popover";
 		svg_circle.dataset.trigger = "hover";
 		svg_circle.dataset.title = sections[laws_sections[i]];
 		svg_circle.dataset.content = laws[i];
 		svg_circle.dataset.placement = "top";
 	});
-
-    $('[data-toggle="popover"]').popover();   
+	$('[data-toggle="popover"]').popover();   
 });
