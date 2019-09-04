@@ -28,9 +28,9 @@ data=[{x:['المؤسس', 'الملك سعود', 'الملك فيصل', 'الم�
 "   4 14 62 21".split(" "),"1 6 8  35 47 4".split(" "),"7 1 4 4 10 30 45".split(" ")],autocolorscale:!0,hoverinfo:"z",showscale:!0,type:"heatmap"}];
 layout={autosize:!0,font:{size:16},colorscale:{sequential:[[0,"#eee"],[1,"#ffd700"]]},xaxis:{automargin:!0,showgrid:!1,autorange:!0,showticklabels:!0,ticks:"outside",type:"category"},yaxis:{automargin:!0,showgrid:!1,autorange:!0,showticklabels:!0,ticks:"outside",type:"category"},margin:{t:0,l:0,r:0,b:0},template:{data:{heatmap:[{type:"heatmap",colorbar:{ticks:"",outlinewidth:0},autocolorscale:!0}]}}};
 
-config={displayModeBar:!1,responsive:!0};
+//config={displayModeBar:!1,responsive:!0};
 
-Plotly.plot("heatmap-data",{data:data,layout:layout,config:config});
+//Plotly.plot("heatmap-data",{data:data,layout:layout,config:config});
 
 $(document).ready(function(){
 	var svg_parent = document.querySelector('#nodesgraph');
