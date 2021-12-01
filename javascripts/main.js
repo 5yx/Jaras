@@ -814,13 +814,24 @@ class Agent{
 			}
 
 			function init(){
-
+				let lowTemp,highTemp	
 				// for each agent, create a 
 				inputArray = new Array(names.length)
 				for (let i = 0;  i< inputArray.length; i++) {
 					agentInputs = new Array(4)
-					agentInputs[0] = p5.createInput(p5.floor(p5.random(18,24)))
-					agentInputs[1] = p5.createInput(p5.floor(p5.random(20,25)))
+					lowTemp = p5.floor(p5.random(18,22))
+					highTemp = p5.floor(lowTemp + p5.random(1,5))
+					highTemp = p5.max(highTemp,21)
+					if(i==6){
+						lowTemp = 23
+						highTemp = 25
+					    }
+					else if(i==7){
+						lowTemp = 18
+						highTemp = 22
+					    }
+					agentInputs[0] = p5.createInput(lowTemp)
+					agentInputs[1] = p5.createInput(highTemp)
 					agentInputs[2] = p5.createInput(p5.round(p5.random(),3))
 					agentInputs[3]  = p5.createCheckbox('', false);
 					
